@@ -1,0 +1,78 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "gravatars",
+    "outputs": [
+      {
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "name": "money",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "money",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewGravatar",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "name": "_receiver",
+        "type": "address"
+      },
+      {
+        "name": "_money",
+        "type": "uint256"
+      }
+    ],
+    "name": "createGravatar",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
